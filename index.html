@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CGPA Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <header>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>CGPA Analyzer</h1>
+        <p class="subtitle">Enter your grades and credits to calculate your CGPA</p>
+
+        <div class="card">
+            <form id="cgpaForm">
+                <div id="courses">
+                    <div class="course">
+                        <input type="text" name="grade[]" placeholder="Grade (e.g. A+)" required>
+                        <input type="number" name="credit[]" placeholder="Credits (e.g. 3)" required>
+                    </div>
+                </div>
+                <button type="button" class="add-btn" onclick="addCourse()">+ Add Course</button>
+                <button type="submit" class="calc-btn">Calculate CGPA</button>
+            </form>
+            <h3 id="result"></h3>
+        </div>
+    </div>
+<footer style="text-align:center;margin-top:20px;color:#aaa;">
+    &copy; 2025 CGPA Analyzer | Built with ❤️ by sanskriti khandelwal
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
